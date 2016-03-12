@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		653092D31C8EC292000B0BA4 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653092D21C8EC292000B0BA4 /* InfoViewController.swift */; };
 		6559B84C1C50528500765736 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559B84B1C50528500765736 /* AppDelegate.swift */; };
 		6559B84E1C50528500765736 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559B84D1C50528500765736 /* ViewController.swift */; };
 		6559B8511C50528500765736 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559B84F1C50528500765736 /* Main.storyboard */; };
 		6559B8531C50528500765736 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6559B8521C50528500765736 /* Assets.xcassets */; };
 		6559B8561C50528500765736 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6559B8541C50528500765736 /* LaunchScreen.storyboard */; };
+		6559B8611C5056CA00765736 /* pause_button_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559B85E1C5056CA00765736 /* pause_button_white.png */; };
+		6559B8621C5056CA00765736 /* play_button_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559B85F1C5056CA00765736 /* play_button_white.png */; };
+		6559B8631C5056CA00765736 /* stop_button_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 6559B8601C5056CA00765736 /* stop_button_white.png */; };
+		6559B86D1C505DFD00765736 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559B86C1C505DFD00765736 /* UIImage+Gif.swift */; };
+		6559B8711C506C6100765736 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559B8701C506C6100765736 /* MediaPlayer.framework */; };
+		BC3ABDBB1C8F9D040055544E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3ABDBA1C8F9CE90055544E /* FontAwesome.ttf */; };
+		BC4567E01C8D5A750024B58C /* ArchivoBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC4567DF1C8D5A6F0024B58C /* ArchivoBlack.otf */; };
+		BC4567E21C8D5F2D0024B58C /* static.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC4567E11C8D5F2D0024B58C /* static.gif */; };
+		BC4567E61C8DF99A0024B58C /* Tag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC4567E51C8DF99A0024B58C /* Tag.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		653092D21C8EC292000B0BA4 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		6559B8481C50528500765736 /* Viral Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Viral Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6559B84B1C50528500765736 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6559B84D1C50528500765736 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,15 @@
 		6559B8521C50528500765736 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6559B8551C50528500765736 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6559B8571C50528500765736 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6559B85E1C5056CA00765736 /* pause_button_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_button_white.png; sourceTree = "<group>"; };
+		6559B85F1C5056CA00765736 /* play_button_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button_white.png; sourceTree = "<group>"; };
+		6559B8601C5056CA00765736 /* stop_button_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stop_button_white.png; sourceTree = "<group>"; };
+		6559B86C1C505DFD00765736 /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		6559B8701C506C6100765736 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MediaPlayer.framework; sourceTree = "<group>"; };
+		BC3ABDBA1C8F9CE90055544E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		BC4567DF1C8D5A6F0024B58C /* ArchivoBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArchivoBlack.otf; sourceTree = "<group>"; };
+		BC4567E11C8D5F2D0024B58C /* static.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = static.gif; sourceTree = "<group>"; };
+		BC4567E51C8DF99A0024B58C /* Tag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tag.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559B8711C506C6100765736 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +59,7 @@
 		6559B83F1C50528500765736 = {
 			isa = PBXGroup;
 			children = (
+				6559B8701C506C6100765736 /* MediaPlayer.framework */,
 				6559B84A1C50528500765736 /* Viral Radio */,
 				6559B8491C50528500765736 /* Products */,
 			);
@@ -54,14 +76,31 @@
 		6559B84A1C50528500765736 /* Viral Radio */ = {
 			isa = PBXGroup;
 			children = (
+				6559B85D1C5056AA00765736 /* Images */,
 				6559B84B1C50528500765736 /* AppDelegate.swift */,
 				6559B84D1C50528500765736 /* ViewController.swift */,
+				6559B86C1C505DFD00765736 /* UIImage+Gif.swift */,
 				6559B84F1C50528500765736 /* Main.storyboard */,
+				653092D21C8EC292000B0BA4 /* InfoViewController.swift */,
 				6559B8521C50528500765736 /* Assets.xcassets */,
 				6559B8541C50528500765736 /* LaunchScreen.storyboard */,
 				6559B8571C50528500765736 /* Info.plist */,
+				BC4567E51C8DF99A0024B58C /* Tag.mp3 */,
 			);
 			path = "Viral Radio";
+			sourceTree = "<group>";
+		};
+		6559B85D1C5056AA00765736 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BC3ABDBA1C8F9CE90055544E /* FontAwesome.ttf */,
+				BC4567DF1C8D5A6F0024B58C /* ArchivoBlack.otf */,
+				BC4567E11C8D5F2D0024B58C /* static.gif */,
+				6559B85E1C5056CA00765736 /* pause_button_white.png */,
+				6559B85F1C5056CA00765736 /* play_button_white.png */,
+				6559B8601C5056CA00765736 /* stop_button_white.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +135,12 @@
 				TargetAttributes = {
 					6559B8471C50528500765736 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = K8PEFCAL3G;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -122,8 +167,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC3ABDBB1C8F9D040055544E /* FontAwesome.ttf in Resources */,
+				BC4567E01C8D5A750024B58C /* ArchivoBlack.otf in Resources */,
+				6559B8621C5056CA00765736 /* play_button_white.png in Resources */,
+				6559B8631C5056CA00765736 /* stop_button_white.png in Resources */,
 				6559B8561C50528500765736 /* LaunchScreen.storyboard in Resources */,
 				6559B8531C50528500765736 /* Assets.xcassets in Resources */,
+				6559B8611C5056CA00765736 /* pause_button_white.png in Resources */,
+				BC4567E61C8DF99A0024B58C /* Tag.mp3 in Resources */,
+				BC4567E21C8D5F2D0024B58C /* static.gif in Resources */,
 				6559B8511C50528500765736 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6559B86D1C505DFD00765736 /* UIImage+Gif.swift in Sources */,
 				6559B84E1C50528500765736 /* ViewController.swift in Sources */,
+				653092D31C8EC292000B0BA4 /* InfoViewController.swift in Sources */,
 				6559B84C1C50528500765736 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -236,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -247,10 +301,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Viral Radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viral.Viral-Radio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +320,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Viral Radio/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.viral.Viral-Radio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +354,7 @@
 				6559B85C1C50528500765736 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
