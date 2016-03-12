@@ -25,13 +25,6 @@ class InfoViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: {})
     }
     
-    
-    @IBAction func linkToWebsite(sender: AnyObject) {
-        UIApplication.sharedApplication().openURL(NSURL(string: "http://www.viral-labs.com/")!)
-
-    }
-    
-    
     /*
     // MARK: - Navigation
 

@@ -20,7 +20,7 @@
 		6559B8711C506C6100765736 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559B8701C506C6100765736 /* MediaPlayer.framework */; };
 		BC3ABDBB1C8F9D040055544E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC3ABDBA1C8F9CE90055544E /* FontAwesome.ttf */; };
 		BC4567E01C8D5A750024B58C /* ArchivoBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = BC4567DF1C8D5A6F0024B58C /* ArchivoBlack.otf */; };
-		BC4567E21C8D5F2D0024B58C /* static.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC4567E11C8D5F2D0024B58C /* static.gif */; };
+		BC4567E21C8D5F2D0024B58C /* Static.gif in Resources */ = {isa = PBXBuildFile; fileRef = BC4567E11C8D5F2D0024B58C /* Static.gif */; };
 		BC4567E61C8DF99A0024B58C /* Tag.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BC4567E51C8DF99A0024B58C /* Tag.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +40,7 @@
 		6559B8701C506C6100765736 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MediaPlayer.framework; sourceTree = "<group>"; };
 		BC3ABDBA1C8F9CE90055544E /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
 		BC4567DF1C8D5A6F0024B58C /* ArchivoBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArchivoBlack.otf; sourceTree = "<group>"; };
-		BC4567E11C8D5F2D0024B58C /* static.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = static.gif; sourceTree = "<group>"; };
+		BC4567E11C8D5F2D0024B58C /* Static.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Static.gif; sourceTree = "<group>"; };
 		BC4567E51C8DF99A0024B58C /* Tag.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Tag.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,7 +95,7 @@
 			children = (
 				BC3ABDBA1C8F9CE90055544E /* FontAwesome.ttf */,
 				BC4567DF1C8D5A6F0024B58C /* ArchivoBlack.otf */,
-				BC4567E11C8D5F2D0024B58C /* static.gif */,
+				BC4567E11C8D5F2D0024B58C /* Static.gif */,
 				6559B85E1C5056CA00765736 /* pause_button_white.png */,
 				6559B85F1C5056CA00765736 /* play_button_white.png */,
 				6559B8601C5056CA00765736 /* stop_button_white.png */,
@@ -135,7 +135,7 @@
 				TargetAttributes = {
 					6559B8471C50528500765736 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = K8PEFCAL3G;
+						DevelopmentTeam = BWUTCR487A;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -175,7 +175,7 @@
 				6559B8531C50528500765736 /* Assets.xcassets in Resources */,
 				6559B8611C5056CA00765736 /* pause_button_white.png in Resources */,
 				BC4567E61C8DF99A0024B58C /* Tag.mp3 in Resources */,
-				BC4567E21C8D5F2D0024B58C /* static.gif in Resources */,
+				BC4567E21C8D5F2D0024B58C /* Static.gif in Resources */,
 				6559B8511C50528500765736 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,7 +310,7 @@
 				INFOPLIST_FILE = "Viral Radio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.viral.Viral-Radio";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SVP-Media.Viral-Radio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -329,7 +329,7 @@
 				INFOPLIST_FILE = "Viral Radio/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.viral.Viral-Radio";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.SVP-Media.Viral-Radio";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
