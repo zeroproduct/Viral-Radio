@@ -4,6 +4,8 @@
 //
 //  Created by Daniel Rica & Albert Guillermo on 1/20/16.
 //  Copyright © 2016 Viral. All rights reserved.
+//  ~ Last Updated March 10, 2016 ~
+//
 //
 
 import UIKit
@@ -27,7 +29,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         UIApplication.sharedApplication().beginReceivingRemoteControlEvents()
         
-        fontAwesome()
+        // Globe
+        // var faicon = [String:UniChar]()
+        // faicon["faglobe"] = 0xf0ac // GLO
+        // let y = 612 //Y-AXIS
+        
+        // let globeLabel = UILabel(frame: CGRectMake(340, CGFloat(y), 120,40))
+        // globeLabel.font = UIFont(name: "FontAwesome", size: 20)
+        // globeLabel.text = String(format: "%C", faicon["faglobe"]!)
+        //globeLabel.textColor = UIColor.whiteColor()
+        //self.view.userInteractionEnabled = true
+        //self.view.addSubview(globeLabel)
+        //self.view.layer.zPosition = 1;
+
         radioTag()
         initialPlayerState()
         backgroundGIF()
@@ -39,8 +53,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     ///---------------SONG TITLE UPDATE FUNCTION---------------\\\
     func updateNowPlaying() {
@@ -82,7 +94,6 @@ class ViewController: UIViewController {
         do
         {
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            
             try AVAudioSession.sharedInstance().setActive(true)
         }
         catch let error as NSError
@@ -93,7 +104,6 @@ class ViewController: UIViewController {
     }
     
     func playButtonTapped(sender: AnyObject) {
-        
         
         if(playButton.titleLabel?.text == "Play") {
             initiatePlayer()
@@ -111,22 +121,18 @@ class ViewController: UIViewController {
     
     func initiatePlayer() {
         
-        var url = NSURL(string: "http://192.241.229.82:8000/;stream.mp3")
+        let url = NSURL(string: "http://192.241.229.82:8000/;stream.mp3")
         playerItem = AVPlayerItem (URL: url!)
         player = AVPlayer (playerItem: playerItem!)
         player!.play()
-        
     }
-    
     func stopPlayer() {
         self.player!.pause()
         self.player = nil
-        
     }
     
     ///---------------LOOP VIRAL RADIO TAG---------------\\\
     func radioTag() {
-        
         let path = NSBundle.mainBundle().pathForResource("Tag.mp3", ofType:nil)!
         let tag = NSURL(fileURLWithPath: path)
         do {
@@ -146,8 +152,7 @@ class ViewController: UIViewController {
     
     ///---------------GIF BACKGROUND---------------\\\
     func backgroundGIF(){
-        
-        let centerGIF = UIImage.gifWithName("static") // Locate File Path
+        let centerGIF = UIImage.gifWithName("Static") // Locate File Path
         let imageView = UIImageView(image: centerGIF) // Create ImageView
         imageView.frame = UIScreen.mainScreen().bounds // Full Screen
         imageView.contentMode = .ScaleAspectFill // Aspect Fill
@@ -158,28 +163,27 @@ class ViewController: UIViewController {
     
     ///---------------UPDATER---------------\\\
     func scheduledUpdater(){
-        
-        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "updateNowPlaying", userInfo: nil, repeats: true)
-        NSTimer.scheduledTimerWithTimeInterval(90.0, target: self, selector: "soundTagAudio", userInfo: nil, repeats: true) //90 SECONDS
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "updateNowPlaying", userInfo: nil, repeats: true) // Track Update
+        NSTimer.scheduledTimerWithTimeInterval(90.0, target: self, selector: "soundTagAudio", userInfo: nil, repeats: true) // Tag Interval
+        NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "trackFade", userInfo: nil, repeats: true) // Track Blink
+    }
+
+    ///---------------TRACK-FADER---------------\\\
+    var trackFader: Bool = false
+    func trackFade() {
+        if trackFader == false {
+            nowPlaying.alpha = 0
+            UIView.animateWithDuration(2.0, delay: 0, options: .CurveEaseIn, animations: {() -> Void in
+            self.nowPlaying.alpha = 1
+            }, completion: { _ in })
+            nowPlaying.textColor = UIColor.whiteColor()
+            trackFader = true
+        }else{
+            nowPlaying.textColor = UIColor.whiteColor()
+            trackFader = false
+        }
     }
     
-    ///---------------FONT AWESOME---------------\\\
-    func fontAwesome(){
-        var faicon = [String:UniChar]()
-        faicon["faglobe"] = 0xf0ac // GLO
-        let y = 612 //Y-AXIS
-        
-        let globeLabel = UILabel(frame: CGRectMake(340, CGFloat(y), 120,40))
-        globeLabel.font = UIFont(name: "FontAwesome", size: 20)
-        globeLabel.text = String(format: "%C", faicon["faglobe"]!)
-        globeLabel.textColor = UIColor.whiteColor()
-        //MAKE ICON RESPONSIVE
-        self.view.userInteractionEnabled = true
-        self.view.addSubview(globeLabel)
-        self.view.layer.zPosition = 1;
-        
-    }
-    
-    
+    ///---------------END OF RARE CODES---------\\\
 }
 
